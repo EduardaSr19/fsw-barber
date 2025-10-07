@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✂️ FSW Barber — Plataforma de Agendamentos para Barbearias
 
-## Getting Started
+> Projeto full‑stack para gerenciamento de **barbearias, barbeiros, horários e agendamentos** usando **Next.js (App Router)**, **TypeScript**, **TailwindCSS**, **Prisma** e **Docker**. O objetivo é oferecer um boilerplate produtivo, com padrões de código e automações de DX (Husky + lint-staged).
 
-First, run the development server:
+![Banner](public/banner-01.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 Sumário
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Visão geral](#-visão-geral)
+- [Funcionalidades](#-funcionalidades)
+- [Stack técnica](#-stack-técnica)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧠 Visão geral
 
-To learn more about Next.js, take a look at the following resources:
+Este repositório contém um app web para **agendamento online de serviços** em uma barbearia. Clientes escolhem **barbeiro, serviço, data/horário**; administradores/gestores controlam **catálogo, disponibilidade e confirmações**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> **Nota:** o projeto foi criado para estudos/portfolio e pode ser adaptado para produção. Ajuste regras de negócio, autenticação, pagamentos e observabilidade conforme sua necessidade.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧩 Funcionalidades
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Cadastro e edição de **serviços** (ex.: corte, barba, combo).
+- Gestão de **barbeiros** e **agenda** (janelas de atendimento/folgas).
+- **Agendamentos** com seleção de data/horário e confirmação.
+- UI moderna com **shadcn/ui** + Tailwind.
+- Camada de dados com **Prisma ORM**.
+- Pronto para **Docker Compose** (app + banco).
+- Padrões de código com **ESLint/Prettier** e ganchos **Husky**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> Alguns módulos podem estar em desenvolvimento. Confira os _issues_ e o `README` para instruções de setup.
+
+---
+
+## 🛠️ Stack técnica
+
+- **Next.js 14+ (App Router)** + **TypeScript**
+- **TailwindCSS** + **shadcn/ui**
+- **Prisma** (PostgreSQL por padrão)
+- **Docker / Docker Compose**
+- **ESLint**, **Prettier**, **Husky** + **lint-staged**
+
+---
+
+## ✅ Pré-requisitos
+
+- **Node.js 18+** e **npm** (ou **pnpm/yarn**)
+- **Docker** e **Docker Compose** (opcional, mas recomendado)
+- Banco **PostgreSQL** (local, Docker ou gerenciado)
+
+---
